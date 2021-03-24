@@ -1,21 +1,26 @@
 <html>
-	<head>
-		<title>SVG</title>
-		<meta charset = "UTF-8">
-		<link rel="stylesheet" href="./style.css">
-	</head>
-	<body>
-		<div class="marksDiv">
-			<input id="maths" type="tel" placeholder="enter your marks"><br/>
-			<input id="physics" type="tel" placeholder="enter your marks"><br/>
-			<input id="chemistry" type="tel" placeholder="enter your marks"><br/>
-			<button onclick="drawGraph()">Submit</button>
-		</div>
-		<div class="graph">
-			<svg id="svg" width= "90" height= "101" >
-				<path d="M 0 0 V 101 H 90"  stroke="black" fill= "transparent"stroke-width="5" ></path>
-			</svg>
-		</div>
-		<script src="./app.js" ></script>
-	</body>
+  <head>
+    <title>SVG</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="marksDiv">
+      <input id="maths" type="tel" placeholder="enter your marks" /><br />
+      <input id="physics" type="tel" placeholder="enter your marks" /><br />
+      <input id="chemistry" type="tel" placeholder="enter your marks" /><br />
+      <button onclick="drawGraph()">Submit</button>
+    </div>
+    <div class="graph">
+      <svg id="svg" width="90" height="101">
+        <path
+          d="M 0 0 V 101 H 90"
+          stroke="black"
+          fill="transparent"
+          stroke-width="5"
+        ></path>
+      </svg>
+    </div>
+    <script src="./app.js"></script>
+  </body>
 </html>

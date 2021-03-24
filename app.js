@@ -21,6 +21,12 @@ function drawGraph() {
   colors.push("red", "green", "blue");
 
   for (let i = 0; i < subjects.length; i++) {
+    if (x2 > 90 || x1 >= 90 || y2 == 101) {
+      x1 = 0;
+      y1 = 100;
+      x2 = 0;
+      y2 = 0;
+    }
     y2 = 101 - Number(subjects[i]);
     x2 = x2 + 30;
     lines[i].setAttribute("x1", x1);

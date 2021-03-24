@@ -17,7 +17,7 @@ let physicsValue = Number(physics);
 let chemistryValue = Number(chemistry);
 
 function drawGraph() {
-        y2 =y2 + (100 -  mathsValue);
+        y2 =y2 + (101 -  mathsValue);
         x2 = 30;
         mathsLine.setAttribute("x1", x1);
         mathsLine.setAttribute("y1", y1);
@@ -28,11 +28,10 @@ function drawGraph() {
         x1 = x2;
         y1 = y2;
         physicsGraph(x1,y1);
-        // console.log(x1,x2,y1,y2);
 }
 function physicsGraph(x1,y1){
         y2 = 0;
-        y2 =y2 + (100 - ( physicsValue));
+        y2 =y2 + (101 - ( physicsValue));
         x2 = 60;
         phyLine.setAttribute("x1", x1);
         phyLine.setAttribute("y1", y1);
@@ -46,7 +45,7 @@ function physicsGraph(x1,y1){
 }
 function chemistryGraph(x1,y1){
         y2 = 0;
-        y2 =y2 + (100 - ( chemistryValue));
+        y2 =y2 + (101 - ( chemistryValue));
         x2 = 90;
         chemLine.setAttribute("x1", x1);
         chemLine.setAttribute("y1", y1);

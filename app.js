@@ -21,6 +21,8 @@ function drawGraph() {
     subjects.push(maths.value, physics.value, chemistry.value);
     let lines = [];
     lines.push(mathsLine, phyLine, chemLine);
+    let colors = [];
+    colors.push("red", "green", "blue");
 
     for (let i = 0; i < subjects.length; i++) {
       if (x2 > 90 || x1 >= 90 || y2 == 101) {

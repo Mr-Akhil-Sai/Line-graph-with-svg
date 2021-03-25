@@ -13,10 +13,10 @@ let x2 = 0;
 let y2 = 0;
 
 function drawGraph() {
-  if (maths.value > 100 || physics.value > 100 || chemistry.value > 100) {
-    alert("Entered values are execeding the limit");
-    emptyingValues();
-  } else {
+  (maths.value > 100 )? maths.value = 100: console.log("hi");
+  (physics.value > 100 )? physics.value = 100: console.log("hi");
+  (chemistry.value > 100 )? chemistry.value = 100: console.log("hi");
+
     let subjects = [];
     subjects.push(maths.value, physics.value, chemistry.value);
     let lines = [];
@@ -44,7 +44,6 @@ function drawGraph() {
       emptyingValues();
     }
   }
-}
 
 function emptyingValues() {
   maths.value = "";

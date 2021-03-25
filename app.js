@@ -9,11 +9,11 @@ let x2 = 0;
 let y2 = 0;
 let subjects = [];
 
+let count = 0;
 function drawGraph() {
   maths.value > 100 ? (maths.value = 100) : console.log();
   physics.value > 100 ? (physics.value = 100) : console.log();
   chemistry.value > 100 ? (chemistry.value = 100) : console.log();
-
   subjects.push(maths.value, physics.value, chemistry.value);
   let colors = [];
   colors.push("red", "green", "blue");
@@ -22,12 +22,18 @@ function drawGraph() {
   for (let i = 0; i < subjects.length; i++) {
     let line = document.createElementNS("http://www.w3.org/2000/svg", "line");
     if (x2 > 90 || x1 >= 90 || y2 == 101) {
+      count = count + 2;
       x1 = 0;
       y1 = 100;
       x2 = 0;
       y2 = 0;
-      for(let j = 0; j <3 ;j++){
+      console.log(count);
+      for(let j = 0; j <= count;j++){
         removingLine();
+        if (count == 4){
+          count = count +1;
+          console.log(count);
+        }
       }
     }
     y2 = 101 - Number(subjects[i]);
@@ -43,6 +49,7 @@ function drawGraph() {
     y1 = y2;
     emptyingValues();
   }
+  // console.log(count);
 }
 
 function emptyingValues() {

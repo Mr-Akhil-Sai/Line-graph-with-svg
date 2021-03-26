@@ -39,6 +39,9 @@ function drawGraph() {
         if (count == 10){
           count = count+1;
         }
+        if (count == 13){
+          count = count + 1;
+        }
       }
     }
     y2 = 101 - Number(subjects[i]);
@@ -54,7 +57,6 @@ function drawGraph() {
     y1 = y2;
     emptyingValues();
   }
-  // console.log(count);
 }
 
 function emptyingValues() {

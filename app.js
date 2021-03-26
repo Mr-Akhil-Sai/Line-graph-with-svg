@@ -32,7 +32,9 @@ function drawGraph() {
         removingLine();
         if (count == 4){
           count = count +1;
-          console.log(count);
+        }
+        if(count == 7){
+          count = count +1;
         }
       }
     }

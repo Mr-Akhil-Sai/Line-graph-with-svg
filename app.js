@@ -36,6 +36,9 @@ function drawGraph() {
         if(count == 7){
           count = count +1;
         }
+        if (count == 10){
+          count = count+1;
+        }
       }
     }
     y2 = 101 - Number(subjects[i]);
